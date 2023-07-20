@@ -99,5 +99,6 @@ public class Jugadores {
 		Defensa = defensa;
 		this.formativa = formativa;
 	}
+	//juan
 	public Jugadores() {}
 }
