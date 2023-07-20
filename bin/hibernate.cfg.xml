@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver.class</property>	
+		<property name="connection.url">jdbc:mysql://192.168.4.199:3306/futbolproyecto</property>
+		<property name="connection.username">Grupito</property>
+		<property name="connection.password">Grupo963.</property>
+		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hibernate.show_sql">true</property>
+	</session-factory>
+</hibernate-configuration>
