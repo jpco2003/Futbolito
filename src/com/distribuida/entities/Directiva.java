@@ -1,15 +1,56 @@
 package com.distribuida.entities;
 
-public class Directiva {
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+@Entity
+@Table(name="Directiva")
+
+public class Directiva {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+
+	@Column(name = "IdDirectiva")
 	private int IdDirectiva;
+	
+	@Column(name = "Nombre")
 	private String Nombre;
+	
+	@Column(name = "Apellido")
 	private String Apellido;
+	
+	@Column(name = "Cargo")
 	private String Cargo;
+	
+	@Column(name = "Correo")
 	private String Correo;
+	
+	@Column(name = "Telefono")
 	private String Telefono;
+	
+	@Column(name = "Direccion")
 	private String Direccion;
+	
+	
+	@Autowired
+	@ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH})
+	@JoinColumn(name = "FormativaId")
 	private Formativa formativa;
+	
+	
 	public int getIdDirectiva() {
 		return IdDirectiva;
 	}
@@ -66,7 +107,7 @@ public class Directiva {
 	}
 	public Directiva(int idDirectiva, String nombre, String apellido, String cargo, String correo, String telefono,
 			String direccion, Formativa formativa) {
-		super();
+		
 		IdDirectiva = idDirectiva;
 		Nombre = nombre;
 		Apellido = apellido;

@@ -1,14 +1,50 @@
 package com.distribuida.entities;
 
-public class Patrocinadores {
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+@Entity
+@Table(name="Patrocinadores")
+
+public class Patrocinadores {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+
+	@Column(name = "IdPatrocinadores")
 	private	int IdPatrocinadores;
+	
+	@Column(name = "Nombre")
 	private	String Nombre;
+	
+	@Column(name = "Telefono")
 	private	String Telefono;
+	
+	@Column(name = "Correo")
 	private	String Correo;
+	
+	@Column(name = "Pais")
 	private	String Pais;
+	
+	@Autowired
+	@ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH})
+	@JoinColumn(name = "DirectivaId")
 	private Directiva directiva;
+	
 	public int getIdPatrocinadores() {
+		
 		return IdPatrocinadores;
 	}
 	public void setIdPatrocinadores(int idPatrocinadores) {
