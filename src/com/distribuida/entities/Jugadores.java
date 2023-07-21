@@ -9,5 +9,74 @@ public class Jugadores {
 	private String Nacionalidad;	
 	private String Posicion;
 	private Formativa formativa;
+	public int getIdJugadores() {
+		return IdJugadores;
+	}
+	public void setIdJugadores(int idJugadores) {
+		IdJugadores = idJugadores;
+	}
+	public String getNombre() {
+		return Nombre;
+	}
+	public void setNombre(String nombre) {
+		Nombre = nombre;
+	}
+	public String getApellido() {
+		return Apellido;
+	}
+	public void setApellido(String apellido) {
+		Apellido = apellido;
+	}
+	public String getDorsal() {
+		return Dorsal;
+	}
+	public void setDorsal(String dorsal) {
+		Dorsal = dorsal;
+	}
+	public String getEdad() {
+		return Edad;
+	}
+	public void setEdad(String edad) {
+		Edad = edad;
+	}
+	public String getNacionalidad() {
+		return Nacionalidad;
+	}
+	public void setNacionalidad(String nacionalidad) {
+		Nacionalidad = nacionalidad;
+	}
+	public String getPosicion() {
+		return Posicion;
+	}
+	public void setPosicion(String posicion) {
+		Posicion = posicion;
+	}
+	public Formativa getFormativa() {
+		return formativa;
+	}
+	public void setFormativa(Formativa formativa) {
+		this.formativa = formativa;
+	}
+	@Override
+	public String toString() {
+		return "Jugadores [IdJugadores=" + IdJugadores + ", Nombre=" + Nombre + ", Apellido=" + Apellido + ", Dorsal="
+				+ Dorsal + ", Edad=" + Edad + ", Nacionalidad=" + Nacionalidad + ", Posicion=" + Posicion
+				+ ", formativa=" + formativa + "]";
+	}
+	public Jugadores(int idJugadores, String nombre, String apellido, String dorsal, String edad, String nacionalidad,
+			String posicion, Formativa formativa) {
+		super();
+		IdJugadores = idJugadores;
+		Nombre = nombre;
+		Apellido = apellido;
+		Dorsal = dorsal;
+		Edad = edad;
+		Nacionalidad = nacionalidad;
+		Posicion = posicion;
+		this.formativa = formativa;
+	}
+	public Jugadores() {
+		super();
+	}
 	
 }
