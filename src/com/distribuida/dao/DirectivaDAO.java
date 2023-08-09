@@ -11,4 +11,5 @@ public interface DirectivaDAO {
 	public void add (Directiva directiva);
 	public void up (Directiva directiva);
 	public void del (int id);
+	public void del (Directiva directiva);
 }

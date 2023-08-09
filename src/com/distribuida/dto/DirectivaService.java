@@ -12,8 +12,8 @@ public interface DirectivaService {
 	public void up (Directiva directiva);
 	public void del(int id);
 	
-	public void add(int IdDirectiva,String Nombre, String Apellido, String Cargo, String Correo,String Telefono,String Direccion);
-	public void up(int IdDirectiva,String Nombre, String Apellido, String Cargo, String Correo,String Telefono,String Direccion);
+	public void add(int IdDirectiva,String Nombre, String Apellido, String Cargo, String Correo,String Telefono,String Direccion, int idFormativa);
+	public void up(int IdDirectiva,String Nombre, String Apellido, String Cargo, String Correo,String Telefono,String Direccion, int idFormativa);
 	
 	public void imprimir (List <Directiva> directivas);
 }

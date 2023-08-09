@@ -106,7 +106,7 @@ public class Directiva {
 				+ formativa + "]";
 	}
 	public Directiva(int idDirectiva, String nombre, String apellido, String cargo, String correo, String telefono,
-			String direccion, Formativa formativa) {
+			String direccion) {
 		
 		IdDirectiva = idDirectiva;
 		Nombre = nombre;
@@ -115,10 +115,7 @@ public class Directiva {
 		Correo = correo;
 		Telefono = telefono;
 		Direccion = direccion;
-		this.formativa = formativa;
 	}
-	public Directiva() {
-		super();
-	}
+
 	
 }

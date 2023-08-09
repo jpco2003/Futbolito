@@ -55,5 +55,11 @@ public class DirectivaDAOImp implements DirectivaDAO {
 		session.delete(id);
 	}
 
+	@Override
+	public void del(Directiva directiva) {
+		// TODO Auto-generated method stub
+		
+	}
+
 
 }
