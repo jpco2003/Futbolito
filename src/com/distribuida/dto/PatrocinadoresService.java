@@ -12,8 +12,8 @@ public interface PatrocinadoresService {
 	public void up (Patrocinadores patrocinadores);
 	public void del(int id);
 	
-	public void add(int IdPatrocinadores,String Nombre,String Telefono,String Correo,String Pais);
-	public void up(int IdPatrocinadores,String Nombre,String Telefono,String Correo,String Pais);
+	public void add(int IdPatrocinadores,String Nombre,String Telefono,String Correo,String Pais, int idDirectiva);
+	public void up(int IdPatrocinadores,String Nombre,String Telefono,String Correo,String Pais, int idDirectiva);
 	
 	public void imprimir (List <Patrocinadores> patrocinadoress);
 }

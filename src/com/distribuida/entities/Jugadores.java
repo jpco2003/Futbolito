@@ -105,7 +105,7 @@ public class Jugadores {
 				+ ", formativa=" + formativa + "]";
 	}
 	public Jugadores(int idJugadores, String nombre, String apellido, String dorsal, String edad, String nacionalidad,
-			String posicion, Formativa formativa) {
+			String posicion) {
 		super();
 		IdJugadores = idJugadores;
 		Nombre = nombre;
@@ -114,10 +114,8 @@ public class Jugadores {
 		Edad = edad;
 		Nacionalidad = nacionalidad;
 		Posicion = posicion;
-		this.formativa = formativa;
+		
 	}
-	public Jugadores() {
-		super();
-	}
+
 	
 }

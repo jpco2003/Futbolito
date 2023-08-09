@@ -85,9 +85,9 @@ public class DirectivaServiceImpl implements DirectivaService{
 		
 	}
 	@Override
-	public void imprimir(List<Directiva> Directivas) {
+	public void imprimir(List<Directiva> directivas) {
 		// TODO Auto-generated method stub
-		Directivas.forEach(item ->{
+		directivas.forEach(item ->{
 			System.out.println (item);
 		});
 		

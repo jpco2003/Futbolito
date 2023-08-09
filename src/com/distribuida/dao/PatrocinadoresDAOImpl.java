@@ -55,4 +55,10 @@ public class PatrocinadoresDAOImpl implements PatrocinadoresDAO {
 		session.delete(id);
 	}
 
+	@Override
+	public void del(Patrocinadores patrocinadores) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

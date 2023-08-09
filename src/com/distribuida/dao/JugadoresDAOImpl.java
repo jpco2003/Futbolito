@@ -55,4 +55,10 @@ public class JugadoresDAOImpl implements JugadoresDAO {
 		session.delete(id);
 	}
 
+	@Override
+	public void del(Jugadores jugadores) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

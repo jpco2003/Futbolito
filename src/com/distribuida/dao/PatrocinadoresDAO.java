@@ -10,4 +10,5 @@ public interface PatrocinadoresDAO {
 	public void add (Patrocinadores patrocinadores);
 	public void up (Patrocinadores patrocinadores);
 	public void del (int id);
+	public void del (Patrocinadores patrocinadores);
 }

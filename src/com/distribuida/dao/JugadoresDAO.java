@@ -11,5 +11,6 @@ public interface JugadoresDAO {
 	public void add (Jugadores jugadores);
 	public void up (Jugadores jugadores);
 	public void del (int id);
+	public void del (Jugadores jugadores);
 	
 }

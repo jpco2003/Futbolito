@@ -116,6 +116,7 @@ public class Directiva {
 		Telefono = telefono;
 		Direccion = direccion;
 	}
-
+	
+	
 	
 }

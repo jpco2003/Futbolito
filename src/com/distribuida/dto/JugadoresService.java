@@ -12,8 +12,8 @@ public interface JugadoresService {
 	public void up (Jugadores jugadores);
 	public void del(int id);
 	
-	public void add(int IdJugadores,String Nombre,String Apellido, String Dorsal,String Edad,String Nacionalidad,String Posicion);
-	public void up(int IdJugadores,String Nombre,String Apellido, String Dorsal,String Edad,String Nacionalidad,String Posicion);
+	public void add(int IdJugadores,String Nombre,String Apellido, String Dorsal,String Edad,String Nacionalidad,String Posicion, int idFormativa );
+	public void up(int IdJugadores,String Nombre,String Apellido, String Dorsal,String Edad,String Nacionalidad,String Posicion, int idFormativa);
 	
 	public void imprimir (List <Jugadores> jugadoress);
 }

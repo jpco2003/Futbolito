@@ -55,6 +55,12 @@ public class FormativaDAOImpl implements FormativaDAO {
 		session.delete(id);
 	}
 
+	@Override
+	public void del(Formativa formativa) {
+		// TODO Auto-generated method stub
+		
+	}
+
 	
 
 }

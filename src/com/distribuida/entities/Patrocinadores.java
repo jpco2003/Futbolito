@@ -85,15 +85,13 @@ public class Patrocinadores {
 		return "Patrocinadores [IdPatrocinadores=" + IdPatrocinadores + ", Nombre=" + Nombre + ", Telefono=" + Telefono
 				+ ", Correo=" + Correo + ", Pais=" + Pais + ", directiva=" + directiva + "]";
 	}
-	public Patrocinadores(int idPatrocinadores, String nombre, String telefono, String correo, String pais,
-			Directiva directiva) {
+	public Patrocinadores(int idPatrocinadores, String nombre, String telefono, String correo, String pais) {
 		super();
 		IdPatrocinadores = idPatrocinadores;
 		Nombre = nombre;
 		Telefono = telefono;
 		Correo = correo;
 		Pais = pais;
-		this.directiva = directiva;
 	}
 	public Patrocinadores() {
 		super();

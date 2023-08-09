@@ -11,5 +11,6 @@ public interface FormativaDAO {
 	public void add (Formativa formativa);
 	public void up (Formativa formativa);
 	public void del (int id);
+	public void del (Formativa formativa);
 	
 }
