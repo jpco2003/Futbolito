@@ -31,6 +31,7 @@ public class PrincipalFormativa {
 //		formativaService.up(0,"Nombre","Direccion","Correo@hotmail.com","0995865960");
 //		//dell
 //		formativaService.del(0);
+		context.close();
 	}
 
 }

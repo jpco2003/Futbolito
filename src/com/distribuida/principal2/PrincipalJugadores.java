@@ -31,6 +31,7 @@ public class PrincipalJugadores {
 //		jugadoresService.add(1, "Nombre J", "ApellidoJ", "Dorsal","Edad", "Nacionalidad","Posicion", 0);
 //		//dell
 //		jugadoresService.del(0);
+		context.close();
 	}
 
 }
