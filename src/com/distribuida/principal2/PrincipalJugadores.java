@@ -15,7 +15,7 @@ public class PrincipalJugadores {
 
 		ClassPathXmlApplicationContext context  = new ClassPathXmlApplicationContext("ApplicationContext.xml");
 		
-		JugadoresService jugadoresService = context.getBean("",JugadoresService.class);
+		JugadoresService jugadoresService = context.getBean("jugadoresServiceImpl",JugadoresService.class);
 		List<Jugadores> jugadores = new ArrayList<Jugadores>();
 		
 		//Find All

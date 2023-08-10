@@ -15,7 +15,7 @@ public class PrincipalPatrocinadores {
 		
 		ClassPathXmlApplicationContext context  = new ClassPathXmlApplicationContext("ApplicationContext.xml");
 		;	
-		PatrocinadoresService patrocinadoresService = context.getBean("PatrocinadoresServiceImpl",PatrocinadoresService.class);
+		PatrocinadoresService patrocinadoresService = context.getBean("patrocinadoresServiceImpl",PatrocinadoresService.class);
 		List<Patrocinadores> patrocinadores2 = new ArrayList<Patrocinadores>();
 		
 		
@@ -24,14 +24,14 @@ public class PrincipalPatrocinadores {
 		patrocinadoresService.imprimir(patrocinadores2);
 		
 		
-		// Find one
-		patrocinadoresService.findOne(0);
-		// add
-		patrocinadoresService.add(0, "Nombre", "0995865960", "Correo@hotmail.com", "Pais", 0);
-		// up
-		patrocinadoresService.add(1, "Nombre", "0995865960", "Correo@hotmail.com", "Pais", 0);
-		// dell
-		patrocinadoresService.del(1);
+//		// Find one
+//		patrocinadoresService.findOne(0);
+//		// add
+//		patrocinadoresService.add(0, "Nombre", "0995865960", "Correo@hotmail.com", "Pais", 0);
+//		// up
+//		patrocinadoresService.add(1, "Nombre", "0995865960", "Correo@hotmail.com", "Pais", 0);
+//		// dell
+//		patrocinadoresService.del(1);
 		context.close();
 	}
 }

@@ -15,7 +15,7 @@ public class PrincipalFormativa {
 		ClassPathXmlApplicationContext context  = new ClassPathXmlApplicationContext("ApplicationContext.xml");
 
 	
-		FormativaService formativaService = context.getBean("FormativaServiceImpl",FormativaService.class);
+		FormativaService formativaService = context.getBean("formativaServiceImpl",FormativaService.class);
 		List<Formativa> formativa1 = new ArrayList<Formativa>();
 		
 		
