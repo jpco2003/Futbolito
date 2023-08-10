@@ -6,7 +6,7 @@ public class PruebaConexionDBC {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String Conexion="jdbc:mysql://192.168.4.199:3306/futbolproyecto"
+		String Conexion="jdbc:mysql://192.168.4.138:3306/futbolproyecto"
 				+ "";
 		String user="Grupito";
 		String password="Grupo963.";

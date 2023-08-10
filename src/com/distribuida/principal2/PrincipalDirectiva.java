@@ -10,20 +10,20 @@ public class PrincipalDirectiva {
 	public static void main(String[] args) {
 	ClassPathXmlApplicationContext context  = new ClassPathXmlApplicationContext("ApplicationContext.xml");
 	Directiva directiva = context.getBean("directiva",Directiva.class);
-	DirectivaService directivaService = context.getBean("",DirectivaService.class);
+	DirectivaService directivaService = context.getBean("directivaServiceImpl",DirectivaService.class);
 	List<Directiva> directivas = new ArrayList<Directiva>();
 	
 	//Find All
 	directivas = directivaService.findAll();
 	directivaService.imprimir(directivas);
-	//Find one
-	directivaService.findOne(0);
-	//add
-	directivaService.add(0, "Nombre", "Apellido", "Cargo", "Cargo",  "95865960" , "Direccion", 0);
-	//up
-	directivaService.add(0, "Nombre", "Apellido", "Cargo", "Cargo",  "95865960" , "Direccion", 0);
-	//dell
-	directivaService.add(0, "Nombre", "Apellido", "Cargo", "Cargo",  "95865960" , "Direccion", 0);
+//	//Find one
+//	directivaService.findOne(0);
+//	//add
+//	directivaService.add(0, "Nombre", "Apellido", "Cargo", "Cargo",  "95865960" , "Direccion", 0);
+//	//up
+//	directivaService.add(0, "Nombre", "Apellido", "Cargo", "Cargo",  "95865960" , "Direccion", 0);
+//	//dell
+//	directivaService.add(0, "Nombre", "Apellido", "Cargo", "Cargo",  "95865960" , "Direccion", 0);
 	
 	context.close();
 }
