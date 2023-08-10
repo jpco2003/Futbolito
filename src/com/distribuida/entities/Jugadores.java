@@ -98,6 +98,10 @@ public class Jugadores {
 	public void setFormativa(Formativa formativa) {
 		this.formativa = formativa;
 	}
+	public Jugadores (Formativa formativa) {
+		this.formativa = formativa;
+	}
+	
 	@Override
 	public String toString() {
 		return "Jugadores [IdJugadores=" + IdJugadores + ", Nombre=" + Nombre + ", Apellido=" + Apellido + ", Dorsal="
@@ -114,6 +118,9 @@ public class Jugadores {
 		Edad = edad;
 		Nacionalidad = nacionalidad;
 		Posicion = posicion;
+		
+	}
+	public Jugadores() {
 		
 	}
 

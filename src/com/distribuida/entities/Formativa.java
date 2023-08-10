@@ -78,7 +78,7 @@ public class Formativa {
 		Telefono = telefono;
 	}
 	public Formativa() {
-		super();
+		
 	}
 	
 }

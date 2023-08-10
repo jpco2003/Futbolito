@@ -14,8 +14,8 @@ public class PrincipalJugadores {
 		// TODO Auto-generated method stub
 
 		ClassPathXmlApplicationContext context  = new ClassPathXmlApplicationContext("ApplicationContext.xml");
-		JugadoresService jugadoresService = context.getBean("",JugadoresService.class);
 		
+		JugadoresService jugadoresService = context.getBean("",JugadoresService.class);
 		List<Jugadores> jugadores = new ArrayList<Jugadores>();
 		
 		//Find All

@@ -14,8 +14,7 @@ public class PrincipalPatrocinadores {
 
 		
 		ClassPathXmlApplicationContext context  = new ClassPathXmlApplicationContext("ApplicationContext.xml");
-		
-		Patrocinadores patrocinadores = context.getBean("patrocinadores",Patrocinadores.class);	
+		;	
 		PatrocinadoresService patrocinadoresService = context.getBean("PatrocinadoresServiceImpl",PatrocinadoresService.class);
 		List<Patrocinadores> patrocinadores2 = new ArrayList<Patrocinadores>();
 		

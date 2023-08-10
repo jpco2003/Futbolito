@@ -14,8 +14,7 @@ public class PrincipalFormativa {
 		// TODO Auto-generated method stub
 		ClassPathXmlApplicationContext context  = new ClassPathXmlApplicationContext("ApplicationContext.xml");
 
-		Formativa formativa = context.getBean("formativa",Formativa.class);
-		
+	
 		FormativaService formativaService = context.getBean("FormativaServiceImpl",FormativaService.class);
 		List<Formativa> formativa1 = new ArrayList<Formativa>();
 		

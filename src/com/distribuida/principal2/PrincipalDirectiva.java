@@ -9,7 +9,7 @@ import com.distribuida.entities.Directiva;
 public class PrincipalDirectiva {
 	public static void main(String[] args) {
 	ClassPathXmlApplicationContext context  = new ClassPathXmlApplicationContext("ApplicationContext.xml");
-	Directiva directiva = context.getBean("directiva",Directiva.class);
+
 	DirectivaService directivaService = context.getBean("directivaServiceImpl",DirectivaService.class);
 	List<Directiva> directivas = new ArrayList<Directiva>();
 	

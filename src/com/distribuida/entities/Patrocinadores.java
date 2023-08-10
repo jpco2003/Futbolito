@@ -80,6 +80,11 @@ public class Patrocinadores {
 	public void setDirectiva(Directiva directiva) {
 		this.directiva = directiva;
 	}
+	
+	public Patrocinadores (Directiva directiva) {
+		this.directiva = directiva;
+	}
+	
 	@Override
 	public String toString() {
 		return "Patrocinadores [IdPatrocinadores=" + IdPatrocinadores + ", Nombre=" + Nombre + ", Telefono=" + Telefono
@@ -94,7 +99,7 @@ public class Patrocinadores {
 		Pais = pais;
 	}
 	public Patrocinadores() {
-		super();
+		
 	}
 	
 }

@@ -50,6 +50,9 @@ public class Directiva {
 	@JoinColumn(name = "FormativaId")
 	private Formativa formativa;
 	
+	public Directiva() {
+		
+	}
 	
 	public int getIdDirectiva() {
 		return IdDirectiva;
@@ -99,6 +102,11 @@ public class Directiva {
 	public void setFormativa(Formativa formativa) {
 		this.formativa = formativa;
 	}
+	
+	public Directiva (Formativa formativa) {
+		this.formativa = formativa;
+	}
+	
 	@Override
 	public String toString() {
 		return "Directiva [IdDirectiva=" + IdDirectiva + ", Nombre=" + Nombre + ", Apellido=" + Apellido + ", Cargo="
