@@ -20,12 +20,12 @@ public class PrincipalFormativa {
 		
 		
 		//Find All
-		formativaService.imprimir(formativa1);
-		formativa1 = formativaService.findAll();
+//		formativaService.imprimir(formativa1);
+//		formativa1 = formativaService.findAll();
 		//Find one
 		
 //		//add
-//		formativaService.add(0,"Nombre","Direccion","Correo@hotmail.com","0995865960");
+		formativaService.add(0,"denis","pifa","Correo@hotmail.com","0995865960");
 //		//up
 //		formativaService.up(0,"Nombre","Direccion","Correo@hotmail.com","0995865960");
 //		//dell

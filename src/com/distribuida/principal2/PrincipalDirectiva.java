@@ -14,12 +14,12 @@ public class PrincipalDirectiva {
 	List<Directiva> directivas = new ArrayList<Directiva>();
 	
 	//Find All
-	directivas = directivaService.findAll();
-	directivaService.imprimir(directivas);
+//	directivas = directivaService.findAll();
+//	directivaService.imprimir(directivas);
 //	//Find one
 //	directivaService.findOne(0);
 //	//add
-//	directivaService.add(0, "Nombre", "Apellido", "Cargo", "Cargo",  "95865960" , "Direccion", 0);
+	directivaService.add(0, "juan", "carrion", "dt", "jpcrrion19",  "95865960" , "Direccion", 0);
 //	//up
 //	directivaService.add(0, "Nombre", "Apellido", "Cargo", "Cargo",  "95865960" , "Direccion", 0);
 //	//dell
