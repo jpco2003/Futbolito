@@ -12,7 +12,7 @@
             <div class="intro-text">
                 <div class="intro-lead-in">Formativas Deportivas</div>
                 <div class="intro-heading">Softbol</div>
-                <a href="#" class="btn-xl">Nosotros</a>
+                <a href="${pageContext.request.contextPath}/formativa/findAll" class="btn-xl">Nosotros</a>
             </div>
     </header>
 </body>
