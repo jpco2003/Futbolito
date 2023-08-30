@@ -7,7 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import com.distribuida.dto.DirectivaService;
 import com.distribuida.entities.Directiva;
 
@@ -17,20 +16,12 @@ import com.distribuida.entities.Directiva;
 
 public class DirectivaController {
 	 @Autowired
-
 	    private DirectivaService directivaService;
 		
-		
 		 @GetMapping("/findAll")
-
 		    public String finadAll(Model model) {
-
-		        
-
 		        List<Directiva> directiva = directivaService.findAll();
-
-		        model.addAttribute("directiva", directiva);
-
+		        model.addAttribute("directivas", directiva);
 		        return "listar-directiva";
 
 		    }

@@ -31,7 +31,7 @@ public class PatrocinadoresController {
 
 	        List<Patrocinadores> patrocinadores = patrocinadoresService.findAll();
 
-	        model.addAttribute("patrocinadores", patrocinadores);
+	        model.addAttribute("patrocinadoress", patrocinadores);
 
 	        return "listar-patrocinadores";
 

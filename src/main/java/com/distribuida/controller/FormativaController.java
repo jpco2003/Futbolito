@@ -20,20 +20,12 @@ public class FormativaController {
     @Autowired
 
     private FormativaService formativaService;
-	
-	
 	 @GetMapping("/findAll")
 
 	    public String finadAll(Model model) {
-
-	        
-
 	        List<Formativa> formativa = formativaService.findAll();
-
-	        model.addAttribute("Formativa", formativa);
-
+	        model.addAttribute("formativas", formativa);
 	        return "listar-formativa";
-
 	    }
 
 
