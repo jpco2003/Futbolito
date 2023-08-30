@@ -5,10 +5,11 @@
 <html>
 <head>
 
+
 <link rel="stylesheet" type="text/css" href="../resources/css/styles.css">
 
 <meta charset="ISO-8859-1">
-<title>Nuestros Jugadores</title>
+<title>Formativas Softbol</title>
 </head>
 
 
