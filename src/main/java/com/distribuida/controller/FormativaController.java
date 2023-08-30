@@ -30,7 +30,7 @@ public class FormativaController {
 
 	        List<Formativa> formativa = formativaService.findAll();
 
-	        model.addAttribute("formativa", formativa);
+	        model.addAttribute("Formativa", formativa);
 
 	        return "listar-formativa";
 
