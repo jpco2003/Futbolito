@@ -24,7 +24,6 @@
 					<th>Nombre</th>
 					<th>Telefono</th>
 					<th>Correo</th>
-					<th>Direccion</th>
 					<th>Pais</th>
 					<th>DirectivaId</th>
 					
@@ -47,8 +46,9 @@
 
 						<td>${item.correo}</td>
 
-						<td>${item.direccion}</td>
 						<td>${item.pais}</td>
+						
+						
 						<td>${item.directiva.nombre}</td>
 
 
@@ -59,7 +59,7 @@
 			</tbody>
 
 		</table>
-
+<br></br>
               <a href="${pageContext.request.contextPath}/formativa/findAll" class="btn-xl"> REGRESAR </a>
 </body>
 </html>

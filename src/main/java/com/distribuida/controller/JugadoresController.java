@@ -30,7 +30,7 @@ public class JugadoresController {
 
 		        List<Jugadores> jugadores = jugadoresService.findAll();
 
-		        model.addAttribute("jugadores", jugadores);
+		        model.addAttribute("jugadoress", jugadores);
 
 		        return "listar-jugadores";
 
