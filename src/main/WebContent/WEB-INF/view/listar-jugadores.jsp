@@ -10,8 +10,11 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
-<h1>JUGADORES</h1>
+<body class="fondo2">
+
+<div class="arr2">
+
+ <center><h1>JUGADORES</h1></center>
 
 
 <table>
@@ -64,7 +67,7 @@
 
 		</table>
 <br></br>
-              <a href="${pageContext.request.contextPath}/formativa/findAll" class="btn-xl"> REGRESAR </a>
-
+               <center><a href="${pageContext.request.contextPath}/formativa/findAll" class="btn-xl"> REGRESAR </a></center>
+</div>
 </body>
 </html>

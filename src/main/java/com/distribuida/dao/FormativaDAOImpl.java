@@ -56,6 +56,7 @@ public class FormativaDAOImpl implements FormativaDAO {
 	}
 
 	@Override
+	
 	public void del(Formativa formativa) {
 		// TODO Auto-generated method stub
 		

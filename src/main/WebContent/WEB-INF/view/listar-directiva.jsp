@@ -10,8 +10,11 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
-<h1>DIRECTIVA</h1>
+<body class="fondo2">
+
+<div class="arr2">
+
+ <center><h1>DIRECTIVA</h1></center>
 
 
 <table>
@@ -46,6 +49,7 @@
 						<td>${item.formativa.nombre}</td>
 				
 
+
 					</tr>
 
 				</c:forEach>
@@ -57,7 +61,7 @@
 <br>
 
 
-               <a href="${pageContext.request.contextPath}/formativa/findAll" class="btn-xl"> REGRESAR </a>
-
+                <center><a href="${pageContext.request.contextPath}/formativa/findAll" class="btn-xl"> REGRESAR </a></center>
+</div>
 </body>
 </html>
