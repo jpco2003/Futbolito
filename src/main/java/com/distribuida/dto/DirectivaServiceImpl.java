@@ -93,5 +93,11 @@ public class DirectivaServiceImpl implements DirectivaService{
 		
 	}
 
+	@Override
+	public List<Formativa> findAllF() {
+		// TODO Auto-generated method stub
+		return formativaDAO.findAll();
+	}
+
 
 }

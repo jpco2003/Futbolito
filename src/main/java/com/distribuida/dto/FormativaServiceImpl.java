@@ -6,8 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.distribuida.dao.FormativaDAO;
-import com.distribuida.dao.FormativaDAO;
-import com.distribuida.entities.Formativa;
 import com.distribuida.entities.Formativa;
 
 @Service

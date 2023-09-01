@@ -14,6 +14,6 @@ public interface FormativaService {
 	
 	public void add(int IdFormativa,String Nombre, String Direccion, String Correo, String Telefono);
 	public void up(int IdFormativa,String Nombre, String Direccion, String Correo, String Telefono);
-	
 	public void imprimir (List <Formativa> formativas);
+	
 }

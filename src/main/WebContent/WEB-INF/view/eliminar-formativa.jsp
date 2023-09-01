@@ -19,7 +19,7 @@
 	
 	 <br></br> 
 	 
-	<button type="submit" > ELIMINAR F</button>
+	<button type="submit"> ELIMINAR F</button>
 	
 	 <br></br>
 	  

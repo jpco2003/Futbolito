@@ -3,10 +3,12 @@ package com.distribuida.dto;
 import java.util.List;
 
 import com.distribuida.entities.Directiva;
+import com.distribuida.entities.Formativa;
 
 public interface DirectivaService {
 	
 	public List<Directiva> findAll();
+	public List<Formativa> findAllF();
 	public Directiva findOne (int id);
 	public void add (Directiva directiva);
 	public void up (Directiva directiva);

@@ -14,24 +14,24 @@
 
 	 <form action="add"method="post">
 	 
-	 	 <input type="hidden" id="idFormativa" name ="idFormativa" value="${formativas.idFormativa}"/>
+	 	 <input type="hidden" id="idFormativa" name ="idFormativa" value="${formativa.idFormativa}"/>
  	 <br></br> 
 	 
 	 
 	 Nombre	
-	 <input type="text" id="nombre" name ="nombre" value="${formativas.nombre}"/>
+	 <input type="text" id="nombre" name ="nombre" value="${formativa.nombre}"/>
 	 <br></br> 
 	
 	 Direccion	
-	 <input type="text" id="direccion" name ="direccion" value="${formativas.direccion}"/>
+	 <input type="text" id="direccion" name ="direccion" value="${formativa.direccion}"/>
 	 <br></br> 
 	 
 	 Correo	
-	 <input type="text" id="correo" name ="correo" value="${formativas.correo}"/>
+	 <input type="text" id="correo" name ="correo" value="${formativa.correo}"/>
 	 <br></br> 
 	 
 	 Telefono	
-	 <input type="text" id="telefono" name ="telefono" value="${formativas.telefono}"/>
+	 <input type="text" id="telefono" name ="telefono" value="${formativa.telefono}"/>
 	 <br></br> 
 	 
 	 

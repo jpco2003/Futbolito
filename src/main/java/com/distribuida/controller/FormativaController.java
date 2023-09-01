@@ -21,28 +21,25 @@ public class FormativaController {
 	
 
     @Autowired
-
     private FormativaService formativaService;
     
 	 @GetMapping("/findAll")
-
 	    public String finadAll(Model model) {
-	        List<Formativa> formativa = formativaService.findAll();
-	        model.addAttribute("formativas", formativa);
+	        List<Formativa> formativas = formativaService.findAll();
+	        model.addAttribute("formativas", formativas);
 	        return "listar-formativa";
 	    }
 	 
 	 @GetMapping("/findOne")
-
 	    public String findOne(@RequestParam("idFormativa") @Nullable Integer idFormativa, @RequestParam("opcion") @Nullable Integer opcion, Model model ) {
 
 	        if(idFormativa != null) {
 	        	
 	        	Formativa formativa = formativaService.findOne(idFormativa);
-	        	 model.addAttribute("formativas", formativa);
+	        	 model.addAttribute("formativa", formativa);
 	        	
 	        }
-	        if(opcion ==1) return "agregar-formativa";
+	        if(opcion==1) return "agregar-formativa";
 	        
 	        else return  "eliminar-formativa";
 
