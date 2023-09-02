@@ -52,7 +52,7 @@ public class FormativaDAOImpl implements FormativaDAO {
 	public void del(int id) {
 		// TODO Auto-generated method stub
 		Session session = sessionFactory.getCurrentSession();
-		session.delete(id);
+		session.delete(findOne(id));
 	}
 
 	@Override

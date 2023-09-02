@@ -42,10 +42,12 @@ public class FormativaServiceImpl implements FormativaService{
 
 	@Override
 	public void del(int id) {
-		// TODO Auto-generated method stub
-		formativaDAO.del(findOne(id));
-		
+	    Formativa formativa = findOne(id);
+	    if (formativa != null) {
+	        formativaDAO.del(formativa);
+	    }
 	}
+
 
 	@Override
 	public void add(int IdFormativa,String Nombre, String Direccion, String Correo,String Telefono) {

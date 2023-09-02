@@ -46,7 +46,6 @@
 						<td>${item.correo}</td>
 						<td>${item.telefono}</td>
 						<td>${item.direccion}</td>
-						<td>${item.formativa.formativa}</td>
 						<td>${item.formativa.nombre}</td>
 				
 

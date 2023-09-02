@@ -58,7 +58,7 @@
 
                         <button><a href= "${pageContext.request.contextPath}/formativa/findOne?idFormativa=${item.idFormativa}&opcion=1">Actualizar</a></button>
 
-                        <button><a href= "${pageContext.request.contextPath}/formativa/findOne?idFormativa=${item.idFormativa}&opcion=2">Borrar </a></button>
+						<button><a href= "${pageContext.request.contextPath}/formativa/findOne?idFormativa=${item.idFormativa}&opcion=2">Borrar </a></button>
 
                    		</td>
 

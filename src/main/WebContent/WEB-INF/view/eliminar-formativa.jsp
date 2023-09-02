@@ -13,7 +13,7 @@
 	
 	<form action="del" method="get"> 
 	
-	<input type="hidden" id="idFormativa" name="idFormativa" value="${formativas.idFormativa}">
+	<input type="hidden" id="idFormativa" name="idFormativa" value="${formativa.idFormativa}">
 	
 	<strong> ¿Desea eliminar la formativa?</strong>
 	
