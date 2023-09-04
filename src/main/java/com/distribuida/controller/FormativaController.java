@@ -59,21 +59,15 @@ public class FormativaController {
 	    	
 	    	return "redirect:/formativa/findAll";
 	    }
-//	    @GetMapping("/del")
-//	    public String del(@RequestParam("idFormativa") @Nullable Integer idFormativa) {
-//	    	
-//	    	formativaService.del(idFormativa);
-//	    	 
-//	    	return "redirect:/formativa/findAll";
-//	    	
-//	    }
-	  @GetMapping("/del")
-	  public String del(@RequestParam("idFormativa") @Nullable Integer idFormativa) {
-	      if (idFormativa != null) {
-	          formativaService.del(idFormativa);
-	      }
-	      return "redirect:/formativa/findAll";
-	  }
-
-
+	  
+	    @GetMapping("/del")
+	    public String del(@RequestParam("idFormativa") @Nullable Integer idFormativa) {
+	    	
+	    	formativaService.del(idFormativa);
+	    	 
+	    	return "redirect:/formativa/findAll";	   
+	    	
+	   }
 }
+
+

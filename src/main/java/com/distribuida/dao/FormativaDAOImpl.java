@@ -1,3 +1,4 @@
+
 package com.distribuida.dao;
 
 import java.util.List;
@@ -56,10 +57,11 @@ public class FormativaDAOImpl implements FormativaDAO {
 	}
 
 	@Override
-	
+	@Transactional
 	public void del(Formativa formativa) {
 		// TODO Auto-generated method stub
-		
+		Session session = sessionFactory.getCurrentSession();
+		session.delete(formativa);
 	}
 
 	

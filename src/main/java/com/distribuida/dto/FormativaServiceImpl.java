@@ -42,10 +42,8 @@ public class FormativaServiceImpl implements FormativaService{
 
 	@Override
 	public void del(int id) {
-	    Formativa formativa = findOne(id);
-	    if (formativa != null) {
-	        formativaDAO.del(formativa);
-	    }
+		
+		formativaDAO.del(findOne(id));
 	}
 
 
