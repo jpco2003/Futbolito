@@ -56,9 +56,11 @@ public class JugadoresDAOImpl implements JugadoresDAO {
 	}
 
 	@Override
+	@Transactional
 	public void del(Jugadores jugadores) {
 		// TODO Auto-generated method stub
-		
+		Session session = sessionFactory.getCurrentSession();
+		session.delete(jugadores);
 	}
 
 }
