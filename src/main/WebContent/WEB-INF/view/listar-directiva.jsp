@@ -15,6 +15,10 @@
 <div class="arr2">
 
  <center><h1>DIRECTIVA</h1></center>
+ 
+  <button><a href= "${pageContext.request.contextPath}/directiva/findOne?opcion=1">Agregar</a></button>
+      <br></br>
+      
 
 
 <table>
@@ -48,7 +52,13 @@
 						<td>${item.direccion}</td>
 						<td>${item.formativa.nombre}</td>
 				
+						<td>
 
+                        <button><a href= "${pageContext.request.contextPath}/directiva/findOne?idDirectiva=${item.idDirectiva}&opcion=1">Actualizar</a></button>
+
+						<button><a href= "${pageContext.request.contextPath}/directiva/findOne?idDirectiva=${item.idDirectiva}&opcion=2">Borrar </a></button>
+
+                   		</td>
 
 					</tr>
 

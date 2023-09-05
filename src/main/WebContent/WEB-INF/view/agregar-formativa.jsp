@@ -12,7 +12,7 @@
 
 	<hr/>
 
-	 <form action="add"method="post">
+	 <form action="add" method="post">
 	 
 	 	 <input type="hidden" id="idFormativa" name ="idFormativa" value="${formativa.idFormativa}"/>
  	 <br></br> 

@@ -56,8 +56,11 @@ public class DirectivaDAOImp implements DirectivaDAO {
 	}
 
 	@Override
+	@Transactional
 	public void del(Directiva directiva) {
 		// TODO Auto-generated method stub
+		Session session = sessionFactory.getCurrentSession();
+		session.delete(directiva);
 		
 	}
 
