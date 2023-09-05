@@ -16,7 +16,8 @@
 
  <center><h1>PATROCINADORES</h1></center>
 
-
+<button><a href= "${pageContext.request.contextPath}/patrocinadores/findOne?opcion=1">Agregar</a></button>
+      <br></br>
 
 <table>
 
@@ -54,7 +55,14 @@
 						
 						<td>${item.directiva.nombre}</td>
 
+						<td>
 
+                        <button><a href= "${pageContext.request.contextPath}/patrocinadores/findOne?idPatrocinadores=${item.idPatrocinadores}&opcion=1">Actualizar</a></button>
+
+						<button><a href= "${pageContext.request.contextPath}/patrocinadores/findOne?idPatrocinadores=${item.idPatrocinadores}&opcion=2">Borrar </a></button>
+
+                   		</td>
+                   		
 					</tr>
 
 				</c:forEach>

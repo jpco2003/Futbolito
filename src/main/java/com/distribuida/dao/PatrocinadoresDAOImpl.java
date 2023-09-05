@@ -56,8 +56,11 @@ public class PatrocinadoresDAOImpl implements PatrocinadoresDAO {
 	}
 
 	@Override
+	@Transactional
 	public void del(Patrocinadores patrocinadores) {
 		// TODO Auto-generated method stub
+		Session session = sessionFactory.getCurrentSession();
+		session.delete(patrocinadores);
 		
 	}
 

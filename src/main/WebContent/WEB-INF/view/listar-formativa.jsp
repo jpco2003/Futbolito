@@ -35,7 +35,7 @@
 					<th>Telefono</th>
 				</tr>
 
-			</thead>
+			</thead> 
 
 			<tbody>
 
