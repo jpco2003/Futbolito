@@ -48,9 +48,9 @@ public class FormativaServiceImpl implements FormativaService{
 
 
 	@Override
-	public void add(int IdFormativa,String Nombre, String Direccion, String Correo,String Telefono) {
+	public void add(int IdFormativa,String Nombre, String Direccion, String Correo,String Telefono,String Logo) {
 		// TODO Auto-generated method stub
-		Formativa formativa = new Formativa(IdFormativa, Nombre, Direccion, Correo, Telefono);
+		Formativa formativa = new Formativa(IdFormativa, Nombre, Direccion, Correo, Telefono, Logo);
 
 		formativaDAO.add(formativa);
 		
@@ -58,9 +58,9 @@ public class FormativaServiceImpl implements FormativaService{
 	}
 
 	@Override
-	public void up(int IdFormativa,String Nombre, String Direccion, String Correo,String Telefono) {
+	public void up(int IdFormativa,String Nombre, String Direccion, String Correo,String Telefono,String Logo) {
 		// TODO Auto-generated method stub
-		Formativa formativa = new Formativa(IdFormativa, Nombre, Direccion, Correo, Telefono);
+		Formativa formativa = new Formativa(IdFormativa, Nombre, Direccion, Correo, Telefono, Logo);
 
 		formativaDAO.up(formativa);
 		

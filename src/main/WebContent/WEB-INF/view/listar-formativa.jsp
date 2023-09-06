@@ -33,6 +33,7 @@
 					<th>Direccion</th>
 					<th>Correo</th>
 					<th>Telefono</th>
+					<th>Logo</th>
 				</tr>
 
 			</thead> 
@@ -52,6 +53,8 @@
 						<td>${item.correo}</td>
 
 						<td>${item.telefono}</td>
+						
+						<td><img width="100" height="100" src="${pageContext.request.contextPath}/resources/img/${item.logo}"/></td>
 						
 						
 						<td>

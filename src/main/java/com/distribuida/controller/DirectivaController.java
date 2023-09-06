@@ -39,12 +39,26 @@ public class DirectivaController {
 		    }
 		 
 		 @GetMapping("/findOne")
-		    public String findOne(@RequestParam("idDirectiva") @Nullable Integer idDirectiva, @RequestParam("opcion") @Nullable Integer opcion, Model model ) {
+		    public String findOne(@RequestParam("idDirectiva") @Nullable Integer idDirectiva, @RequestParam("opcion") @Nullable Integer opcion, ModelMap modelMap ) {
 
 		        if(idDirectiva != null) {
 		        	
 		        	Directiva directiva = directivaService.findOne(idDirectiva);
-		        	 model.addAttribute("directiva", directiva);
+		        	
+		        	Formativa formativa = formativaService.findOne(directiva.getFormativa().getIdFormativa());
+		        	
+
+		        	 modelMap.addAttribute("directiva", directiva);		        	 
+		        	 modelMap.addAttribute("formativa", formativa);
+		        	 
+		        	 modelMap.addAttribute("formativas", formativaService.findAll());
+		        	 
+		   
+		        	 }
+		        else {
+		        	
+		        	 modelMap.addAttribute("formativas", formativaService.findAll());
+
 		        	
 		        }
 		        if(opcion==1) return "agregar-directiva";

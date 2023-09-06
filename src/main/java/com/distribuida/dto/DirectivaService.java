@@ -18,4 +18,5 @@ public interface DirectivaService {
 	public void up(int IdDirectiva,String Nombre, String Apellido, String Cargo, String Correo,String Telefono,String Direccion, int idFormativa);
 	
 	public void imprimir (List <Directiva> directivas);
+	
 }

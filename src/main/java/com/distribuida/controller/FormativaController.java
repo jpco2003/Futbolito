@@ -51,11 +51,12 @@ public class FormativaController {
 	    		, @RequestParam("direccion") @Nullable String direccion
 	    		, @RequestParam("correo") @Nullable String correo
 	    		, @RequestParam("telefono") @Nullable String telefono
+	    		, @RequestParam("logo") @Nullable String logo
 
 	    		) {
-	    	if(idFormativa == null ) formativaService.add(0,nombre,direccion,correo,telefono);
+	    	if(idFormativa == null ) formativaService.add(0,nombre,direccion,correo,telefono,logo);
 	    	
-	    	else formativaService.add(idFormativa,nombre,direccion,correo,telefono);
+	    	else formativaService.add(idFormativa,nombre,direccion,correo,telefono,logo);
 	    	
 	    	return "redirect:/formativa/findAll";
 	    }

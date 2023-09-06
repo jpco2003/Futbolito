@@ -34,17 +34,21 @@ public class Formativa {
 	@Column(name = "Telefono")
 	private String Telefono;
 	
+	@Column(name = "Logo")
+	private String Logo;
+	
 public Formativa() {
 		
 	}
 	
-	public Formativa(int idFormativa, String nombre, String direccion, String correo, String telefono) {
+	public Formativa(int idFormativa, String nombre, String direccion, String correo, String telefono, String logo) {
 		super();
 		IdFormativa = idFormativa;
 		Nombre = nombre;
 		Direccion = direccion;
 		Correo = correo;
 		Telefono = telefono;
+		Logo = logo;
 	}
 	
 	public int getIdFormativa() {
@@ -79,12 +83,21 @@ public Formativa() {
 	}
 	
 	
+	public String getLogo() {
+		return Logo;
+	}
+
+	public void setLogo(String logo) {
+		Logo = logo;
+	}
 	
 	@Override
 	public String toString() {
 		return "Formativa [IdFormativa=" + IdFormativa + ", Nombre=" + Nombre + ", Direccion=" + Direccion + ", Correo="
-				+ Correo + ", Telefono=" + Telefono + "]";
+				+ Correo + ", Telefono=" + Telefono + ", Logo=" + Logo + "]";
 	}
+
+	
 	
 	
 }
