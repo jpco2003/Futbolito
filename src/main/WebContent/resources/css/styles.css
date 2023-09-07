@@ -14,6 +14,28 @@
     
 }
 
+button {
+   border: none; 
+  color: black; 
+  padding: 10px 10px; 
+  cursor: pointer; 
+  border-radius: 5px;
+}
+button {background-color: white; border: 2px solid #04AA6D;} 
+button:hover {background-color: #46a049; color: white;}
+
+
+
+
+
+table {
+  ...
+}
+
+table {
+  width: 70%;
+  height: 400px;
+}
 
 .fondo{
 	

@@ -46,12 +46,12 @@
 	 direccion	
 	 <input type="text" id="direccion" name ="direccion" value="${directiva.direccion}"/>
 	 <br></br> 
-	 ${directiva.formativas.idFormativa == item.idFormativa ? 'selected':''}
+	 
 	 Formativa 
 	<select id="idFormativa" name="idFormativa">
 	
 	<c:forEach var="item"  items="${formativas}">
-	<option value="${directiva.formativas.idFormativa == item.idFormativa ? 'selected':''}" > ${item.nombre}</option>
+	<option value="${item.idFormativa}" ${directiva.formativa.idFormativa == item.idFormativa ? 'selected':''}> ${item.nombre}</option>
 	
 	</c:forEach>
 	

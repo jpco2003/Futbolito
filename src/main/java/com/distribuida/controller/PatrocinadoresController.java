@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.distribuida.dto.PatrocinadoresService;
-import com.distribuida.entities.Directiva;
 import com.distribuida.entities.Patrocinadores;
 
 

@@ -16,6 +16,9 @@
                 <a href="${pageContext.request.contextPath}/formativa/findAll" class="btn-xl"> Nosotros </a>
             </div>
     </header>
+    	 <br></br> 
+    <center>  <h1>COMO INFLUYO EL COVID EN EL FÚTBOL</h1></center>
+    	 <br></br> 
     <iframe title="CasoCovid19vsVacunacionvsIDMERI (1)" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=ad7a3c9a-bae0-40a9-9c78-d30128ed3836&autoAuth=true&ctid=5489579d-44b5-4792-af49-e9be4633a3d5" frameborder="0" allowFullScreen="true"></iframe>
 </body>
 </html>

@@ -37,6 +37,8 @@ public class Formativa {
 	@Column(name = "Logo")
 	private String Logo;
 	
+	
+	
 public Formativa() {
 		
 	}
@@ -55,13 +57,13 @@ public Formativa() {
 		return IdFormativa;
 	}
 	public void setIdFormativa(int idFormativa) {
-		IdFormativa = idFormativa;
+		this.IdFormativa = idFormativa;
 	}
 	public String getNombre() {
 		return Nombre;
 	}
 	public void setNombre(String nombre) {
-		Nombre = nombre;
+		this.Nombre = nombre;
 	}
 	public String getDireccion() {
 		return Direccion;
