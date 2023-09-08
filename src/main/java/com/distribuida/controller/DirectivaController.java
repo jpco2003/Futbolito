@@ -75,11 +75,13 @@ public class DirectivaController {
 		    		, @RequestParam("correo") @Nullable String correo
 		    		, @RequestParam("telefono") @Nullable String telefono
 		    		, @RequestParam("direccion") @Nullable String direccion
+		    		
+		    		, @RequestParam("idFormativa") @Nullable Integer idFormativa
 
 		    		) {
-		    	if(idDirectiva == null ) directivaService.add(0,nombre,apellido,cargo,correo,telefono,direccion,0);
+		    	if(idDirectiva == null ) directivaService.add(0,nombre,apellido,cargo,correo,telefono,direccion,idFormativa);
 		    	
-		    	else directivaService.add(idDirectiva,nombre,apellido,cargo,correo,telefono,direccion,0);
+		    	else directivaService.add(idDirectiva,nombre,apellido,cargo,correo,telefono,direccion,idFormativa);
 		    	
 		    	return "redirect:/directiva/findAll";
 		    }

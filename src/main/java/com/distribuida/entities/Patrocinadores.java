@@ -43,6 +43,10 @@ public class Patrocinadores {
 	@JoinColumn(name = "DirectivaId")
 	private Directiva directiva;
 	
+	public Patrocinadores() {
+		
+	}
+	
 	public int getIdPatrocinadores() {
 		
 		return IdPatrocinadores;
@@ -97,9 +101,6 @@ public class Patrocinadores {
 		Telefono = telefono;
 		Correo = correo;
 		Pais = pais;
-	}
-	public Patrocinadores() {
-		
 	}
 	
 }
