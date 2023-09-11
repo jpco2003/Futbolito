@@ -53,7 +53,7 @@
 						<td>${item.pais}</td>
 						
 						
-						<td>${item.directiva.nombre}</td>
+						<td>${item.directiva.cargo}</td>
 
 						<td>
 

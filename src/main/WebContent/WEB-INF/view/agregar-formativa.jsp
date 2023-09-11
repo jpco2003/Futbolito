@@ -17,6 +17,7 @@
 	 	 <input type="hidden" id="idFormativa" name ="idFormativa" value="${formativa.idFormativa}"/>
  	 <br></br> 
 	 
+	 	 <center>
 	 
 	 Nombre	
 	 <input type="text" id="nombre" name ="nombre" value="${formativa.nombre}"/>

@@ -7,10 +7,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="../resources/css/styles.css">
+
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
+<body class="fondo2" style="background-image: url('https://transforma.fusalmo.org/wp-content/uploads/Futbol-patio-virtual.gif');">
+<div class="arr2">
 
 	<h1>Jugadores</h1>
 
@@ -20,33 +23,33 @@
 	 
 	 	 <input type="hidden" id="idJugadores" name ="idJugadores" value="${jugadores.idJugadores}"/>
  	 <br></br> 
+	 <center>
 	 
-	 
-	 Nombre	
+	 <h2>Nombre</h2>	
 	 <input type="text" id="nombre" name ="nombre" value="${jugadores.nombre}"/>
 	 <br></br> 
 	
-	 apellido	
+	<h2>Apellido</h2> 	
 	 <input type="text" id="apellido" name ="apellido" value="${jugadores.apellido}"/>
 	 <br></br> 
 	 
-	  dorsal	
+	  <h2>Dorsal</h2>	
 	 <input type="text" id="dorsal" name ="dorsal" value="${jugadores.dorsal}"/>
 	 <br></br> 
 	 
-	 edad	
+	 <h2>Edad</h2>	
 	 <input type="text" id="edad" name ="edad" value="${jugadores.edad}"/>
 	 <br></br> 
 	 
-	 nacionalidad	
+	 <h2>Nacionalidad</h2>	
 	 <input type="text" id="nacionalidad" name ="nacionalidad" value="${jugadores.nacionalidad}"/>
 	 <br></br> 
 	 
-	 posicion	
+	 <h2>Posicion</h2>	
 	 <input type="text" id="posicion" name ="posicion" value="${jugadores.posicion}"/>
 	 <br></br> 
 	 
-	  Formativa 
+	  <h2>Formativa</h2> 
 	<select id="idFormativa" name="idFormativa">
 	
 	<c:forEach var="item"  items="${formativas}">
@@ -60,9 +63,13 @@
 	 <button type="submit"  > GUARDAR D</button>
 	 <br></br> 
 	 <button type="button" onclick="window.location.href='/Futbol-Proyecto/jugadores/findAll' ; return false;"> CANCELAR</button>
+	 </center>
+	  <br></br> 
+	  <br></br> 
+	  <br></br> 
 	 
 	 
 	 </form>
-		
+		</div>
 </body>
 </html>

@@ -24,14 +24,6 @@ button {
 button {background-color: white; border: 2px solid #04AA6D;} 
 button:hover {background-color: #46a049; color: white;}
 
-
-
-
-
-table {
-  ...
-}
-
 table {
   width: 70%;
   height: 400px;
@@ -83,6 +75,8 @@ table {
     margin-bottom: 100px;
     margin: 0 auto; /* Para centrar horizontalmente */
     max-width: 400px; /* Limito el ancho máximo a 400px */   
+    
+    
 }
 
 .arr2{

@@ -43,7 +43,6 @@ public class PatrocinadoresController {
 	        List<Directiva> directiva = directivaService.findAll();
 	        
 	        modelMap.addAttribute("directivas", directiva);
-
 	        modelMap.addAttribute("patrocinadoress", patrocinadores);
 
 	        return "listar-patrocinadores";
@@ -83,9 +82,7 @@ public class PatrocinadoresController {
 	    		, @RequestParam("telefono") @Nullable String telefono
 	    		, @RequestParam("correo") @Nullable String correo
 	    		, @RequestParam("pais") @Nullable String pais
-	    		,@RequestParam("idDirectiva") @Nullable Integer idDirectiva
-	    		
-	    		
+	    		, @RequestParam("idDirectiva") @Nullable Integer idDirectiva
 	    		
 	    		
 	    		) {
@@ -95,6 +92,7 @@ public class PatrocinadoresController {
 	    	
 	    	return "redirect:/patrocinadores/findAll";
 	    }
+	
 	  
 	    @GetMapping("/del")
 	    public String del(@RequestParam("idPatrocinadores") @Nullable Integer idPatrocinadores) {

@@ -38,7 +38,7 @@ public class Patrocinadores {
 	@Column(name = "Pais")
 	private	String Pais;
 	
-	@Autowired
+//	@Autowired
 	@ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH})
 	@JoinColumn(name = "DirectivaId")
 	private Directiva directiva;
