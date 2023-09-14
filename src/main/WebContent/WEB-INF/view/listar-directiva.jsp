@@ -8,7 +8,8 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="../resources/css/styles.css">
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
@@ -58,7 +59,7 @@
 
                         <button><a href= "${pageContext.request.contextPath}/directiva/findOne?idDirectiva=${item.idDirectiva}&opcion=1">Actualizar</a></button>
 
-						<button><a href= "${pageContext.request.contextPath}/directiva/findOne?idDirectiva=${item.idDirectiva}&opcion=2">Borrar </a></button>
+					<button id="eliminar" name="eliminar"  onclick="window.modal.showModal(); document.getElementById('idDirectiva').value=${item.idDirectiva}">Borrar</button>
 
                    		</td>
 
@@ -72,8 +73,29 @@
 <br></br>
 <br>
 
+ <dialog id="modal">
+  	<form action="del" method="get"> 
+	
+	<input type="hidden" id="idDirectiva" name="idDirectiva" value="">
+	
+	<strong> ¿Desea eliminar la formativa?</strong>
+	
+	 <br></br> 
+	 
+	<center> <button class="btn btn-outline-danger"  type="submit"> CONFIRMAR</button> </center>
+	
+	 <br></br>
+	  
+	<center>  <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='/Futbol-Proyecto/directiva/findAll' ; return false;"> CANCELAR</button></center>
+	
+	</form>
+  
+   
+   
+</dialog>
 
-                <center><a href="${pageContext.request.contextPath}/formativa/findAll" class="btn-xl"> REGRESAR </a></center>
-</d iv>
+
+                <center><a href="${pageContext.request.contextPath}/menu.jsp" class="btn-xl"> REGRESAR </a></center>
+</div>
 </body>
 </html>

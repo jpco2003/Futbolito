@@ -4,17 +4,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css"
 	href="../resources/css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 <meta charset="ISO-8859-1">
 <title>Formativas Softbol</title>
-</head>
 
+</head>
+	
 
 <body class="fondo">
+
+
+
 
 	<div class="arr">
 
@@ -60,9 +65,8 @@
 						<td>
 
                         <button><a href= "${pageContext.request.contextPath}/formativa/findOne?idFormativa=${item.idFormativa}&opcion=1">Actualizar</a></button>
-
-						<button><a href= "${pageContext.request.contextPath}/formativa/findOne?idFormativa=${item.idFormativa}&opcion=2">Borrar </a></button>
-
+						<button id="eliminar" name="eliminar"  onclick="window.modal.showModal(); document.getElementById('idFormativa').value=${item.idFormativa}">Borrar</button>
+						
                    		</td>
 
 
@@ -78,28 +82,35 @@
 
 
 		<center>
-			<a href="${pageContext.request.contextPath}/directiva/findAll"
-				class="btn-xl"> DIRECTIVA </a>
+			<a href="${pageContext.request.contextPath}/menu.jsp"
+				class="btn-xl"> regresar </a>
 		</center>
 
 
-		<br></br> <br></br> <br></br>
-
-		<center>
-			<a href="${pageContext.request.contextPath}/jugadores/findAll"
-				class="btn-xl"> JUGADORES </a>
-		</center>
-
-
-		<br></br> <br></br> <br></br>
-
-		<center>
-			<a href="${pageContext.request.contextPath}/patrocinadores/findAll"
-				class="btn-xl"> PATROCINADORES </a>
-		</center>
 
 		<br></br> <br></br>
-
+    
+    <dialog id="modal">
+  	<form action="del" method="get"> 
+	
+	<input type="hidden" id="idFormativa" name="idFormativa" value="">
+	
+	<strong> ¿Desea eliminar la formativa?</strong>
+	
+	 <br></br> 
+	 
+	<center> <button class="btn btn-outline-danger"  type="submit"> CONFIRMAR</button> </center>
+	
+	 <br></br>
+	  
+	<center> <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='/Futbol-Proyecto/formativa/findAll' ; return false;"> CANCELAR</button></center>
+	
+	</form>
+  
+   
+   
+</dialog>
+     
 
 	</div>
 </body>

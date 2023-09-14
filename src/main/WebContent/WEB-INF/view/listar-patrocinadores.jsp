@@ -71,7 +71,7 @@
 
 		</table>
 <br></br>
-              <center><a href="${pageContext.request.contextPath}/formativa/findAll" class="btn-xl"> REGRESAR </a></center>
+              <center><a href="${pageContext.request.contextPath}/menu.jsp" class="btn-xl"> REGRESAR </a></center>
 
 </div>
 </body>
